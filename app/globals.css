@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root { --ink: #172036; --blue: #2863ff; --line: #dce3ef; --muted: #667085; --paper: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, "Microsoft YaHei", sans-serif; }
+button { font: inherit; cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .62; }
+.page-shell { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 72px 0 64px; }
+.hero { max-width: 670px; margin-bottom: 38px; }
+.eyebrow, .step { margin: 0 0 10px; color: var(--blue); font-size: 14px; font-weight: 700; letter-spacing: .08em; }
+h1, h2 { margin: 0; letter-spacing: -.035em; }
+h1 { font-size: clamp(38px, 7vw, 62px); line-height: 1.05; }
+h2 { font-size: 24px; }
+.intro { margin: 18px 0 0; color: var(--muted); font-size: 17px; line-height: 1.75; }
+.tool-card { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: clamp(24px, 5vw, 42px); box-shadow: 0 16px 42px rgba(28, 44, 75, .08); }
+.card-heading, .results-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.folder-tag { max-width: 46%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 8px 12px; background: #eef3ff; border-radius: 999px; color: #244fab; font-size: 14px; }
+.select-button, .rename-button { border: 0; border-radius: 10px; font-weight: 700; transition: transform .18s, background .18s; }
+.select-button:hover, .rename-button:hover { transform: translateY(-1px); }
+.select-button { width: 100%; margin-top: 25px; padding: 15px 18px; background: var(--blue); color: #fff; }
+.privacy-note { margin: 13px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.notice { margin: 25px 0 0; padding: 13px 15px; background: #f0f5ff; color: #244fab; border-radius: 9px; font-size: 14px; }
+.results { margin-top: 38px; padding-top: 31px; border-top: 1px solid var(--line); }
+.rename-button { flex: 0 0 auto; padding: 12px 16px; background: #172036; color: #fff; font-size: 14px; }
+.table-wrap { margin-top: 22px; max-height: 360px; overflow: auto; border: 1px solid var(--line); border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; text-align: left; }
+th { position: sticky; top: 0; padding: 12px 14px; background: #f8faff; color: #526078; font-size: 12px; }
+td { max-width: 260px; overflow-wrap: anywhere; padding: 14px; border-top: 1px solid #edf0f5; }
+.status { font-size: 13px; font-weight: 700; }.status-待处理 { color: #735a06; }.status-已完成 { color: #157142; }.status-跳过, .status-失败 { color: #bd3131; }
+.rules { margin-top: 22px; padding: 18px 22px; color: #526078; background: #eef3ff; border-radius: 12px; font-size: 14px; line-height: 1.7; }
+.rules p { margin: 0; }.rules strong { color: #244fab; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 600px) { .page-shell { padding-top: 48px; }.card-heading, .results-header { align-items: flex-start; flex-direction: column; }.folder-tag { max-width: 100%; }.rename-button { width: 100%; }.table-wrap { margin-right: -8px; } th, td { min-width: 155px; } }
