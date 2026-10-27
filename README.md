@@ -1,5 +1,10 @@
 # 文件名大写转换
 
+<!-- AI-HANDOFF-ENTRY -->
+**AI接手与运行：**[从这里开始](AI_START_HERE.md) · [安装/启动/数据说明](docs/AI_HANDOFF.md) · [实际验证结果](docs/VERIFICATION.md)。
+<!-- /AI-HANDOFF-ENTRY -->
+
+
 一个纯本地运行的网页小工具：选择一个文件夹后，它会把该文件夹内所有文件名中的小写英文字母转换为大写，其他字符保持不变。
 
 例如：`report-final_v2.docx` 会变为 `REPORT-FINAL_V2.DOCX`。

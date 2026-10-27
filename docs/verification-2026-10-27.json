@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-27",
+  "repository": "filename-uppercase-tool",
+  "defaultBranch": "master",
+  "visibility": "public",
+  "sourceCommit": "565d6ce646b0766544d7e516df156f4ca18ebb0f",
+  "status": "已通过所列检查",
+  "checks": [
+    {
+      "command": "[.] npm run test",
+      "result": "通过",
+      "code": 0
+    }
+  ],
+  "scope": [
+    "网页文件系统能力要求支持File System Access API的浏览器、localhost或HTTPS及用户授权。构建通过不代表已执行实际批量改名。"
+  ],
+  "syntax": {
+    "javascript": 4,
+    "python": 1,
+    "powershell": 0
+  },
+  "runtime": {
+    "node": "24.12.0",
+    "python": "3.12.14",
+    "os": "Windows"
+  }
+}
